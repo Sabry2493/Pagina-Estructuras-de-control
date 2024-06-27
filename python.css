@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Patua+One&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Patua One", serif;
+}
+
+/*ESTILOS DEL MENU #f74712,#ee7724*/
+#cabecera{
+    display: flex;
+    /*background: linear-gradient(to right,#ee7724, #e24e21);*/
+    background: linear-gradient(to right,#f7f6f5,rgb(224, 163, 77),rgb(226, 150, 44),#ce6f02,#c53902);
+    align-items: center;
+    justify-content: space-between; 
+    padding-left: 20px;
+    margin: 0px;
+    border: solid 15px #e7650d;
+}
+
+#logo{
+    width: 65px;
+    height: auto;
+    animation: rotate 3s infinite linear; /* Añadir esta línea */
+   
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#titulo{
+    text-shadow:2px 5px 10px  rgb(76, 76, 80);
+}
+
+
+#navegacion{
+    text-align: center;
+    margin: 0px;
+    padding: 0px; 
+    padding-top: 16px;
+
+    text-shadow:0px 2px 15px rgba(255, 255, 255, 0.959);
+    
+}
+
+.row a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+.row ul{
+    list-style: none;
+    margin-right: 0px;
+    padding: 20px;
+    padding-right: 0px;
+    background: linear-gradient(to right,rgb(226, 150, 44),#ce6f02,#c53902);
+    border-radius: 5px 0px 0px 5px;
+}
+
+#lenguajes{
+    display:none ;/*que desaparezcan cuando no se pasa por encima*/
+    position: absolute;/*si no se pone el menu se ensancharia cada vez que habre el submenu*/
+    min-width: 140px;/*ancho minimo*/
+}
+
+/*ESTILOS DE ORGANIGRAMA DESPLEGABLE*/
+#introduccion{   
+    margin: 0px 10px;
+    background-color: rgba(76, 76, 80, 0.801);
+    text-align: center;
+    padding: 60px;
+    
+}
+#cajaTexto{
+    background: linear-gradient(to right,rgb(226, 150, 44),#ce6f02,#c53902);
+    padding: 70px;
+}
+#seccionDesplegable{
+    border-top: solid 10px #ee7724;
+    background: linear-gradient(to right,rgb(226, 150, 44),#ce6f02,#c53902);
+    margin: 0px;
+    padding: 50px;
+    height: 100%;
+}
+#organigrama{
+    margin: 10px;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+#fila1S,#fila1I{
+    margin: 0px 40px;
+    cursor: pointer;
+    
+}
+#fila2S,#fila2I{
+    padding: 16px;
+    display: none;/*oculta inicialmente el elemento.*/
+    cursor: pointer;
+    }
+    /*animation-name: fila1-movimiento;
+    animation-duration: 2s;
+}
+@keyframes fila1-movimiento {
+    height 200px;
+}*/
+
+#fila3I{
+    display: none;
+    cursor: pointer;
+}
+
+#doble,#simple,#multiple {
+    margin: 0px 20px;
+    padding: 18px;
+}
+#contador,#condicion{
+    margin: 0px 20px;
+    
+}
+#inicial,#final{
+    margin: 0px 16px;
+    padding: 0px 2px;
+    
+}
+/*ESTILOS DE FOOTER*/
+#pie{
+    background: linear-gradient(to left,rgb(224, 146, 1),#ce6f02,#c53902);
+    margin-bottom: 0px;
+    height: 100%;
+    padding: 12px;
+}
