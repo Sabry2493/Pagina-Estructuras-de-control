@@ -23,17 +23,6 @@ document.getElementById('iteracion').addEventListener('click',function(){
     fila2S.scrollIntoView({ behavior: 'smooth' });
 });
 
-document.getElementById('contador').addEventListener('mouseenter',function(){
-    var fila3I=document.getElementById('fila3I');
-    fila3I.style.display='flex';
-    fila3I.scrollIntoView({ behavior: 'smooth' });
-});
-
-document.getElementById('condicion').addEventListener('mouseenter',function(){
-    var fila3I=document.getElementById('fila3I');
-    fila3I.style.display='flex';
-    fila3I.scrollIntoView({ behavior: 'smooth' });
-});
 
 //PARA VALIDAR FORMULARIO
 function Valida(){
