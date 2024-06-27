@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>Filtro de Tarjetas</title>
+    <title>Ejemplo de Página Responsiva</title>
     <style>
         body {
-            background: linear-gradient(to right, #aa4d0a,#ee7724, #d8363a);
+            background: linear-gradient(to right, #aa4d0a, #ee7724, #d8363a);
         }
         .btn-gradient {
             background: linear-gradient(to right, #ee7724, #d8363a);
@@ -48,7 +48,7 @@
     <header>
         <div class="logo-container">
             <a href="index.html">
-                <img src="/iconos/logo.png" alt="Logo">
+                <img src="./iconos/logo.png" alt="Logo">
             </a>
             <h1>Estructuras de control</h1>
         </div>
@@ -87,48 +87,54 @@
                 language: 'java',
                 structure: 'if',
                 title: 'Java If',
-                image: '/iconos/logo_java_gris.png',
-                text: 'Ejemplo de estructura if en Java.'
+                image: 'logo_java_gris.png',
+                text: 'Ejemplo de estructura if en Java.',
+                link: 'java_if.html'
             },
             {
                 id: 2,
                 language: 'java',
                 structure: 'for',
                 title: 'Java For',
-                image: '/iconos/logo_java_gris.png',
-                text: 'Ejemplo de estructura for en Java.'
+                image: 'logo_java_gris.png',
+                text: 'Ejemplo de estructura for en Java.',
+                link: 'java_for.html'
             },
             {
                 id: 3,
                 language: 'java',
                 structure: 'while',
                 title: 'Java While',
-                image: '/iconos/logo_java_gris.png',
-                text: 'Ejemplo de estructura while en Java.'
+                image: 'logo_java_gris.png',
+                text: 'Ejemplo de estructura while en Java.',
+                link: 'java_while.html'
             },
             {
                 id: 4,
                 language: 'python',
                 structure: 'if',
                 title: 'Python If',
-                image: '/iconos/logo_python_gris.png',
-                text: 'Ejemplo de estructura if en Python.'
+                image: 'logo_python_gris.png',
+                text: 'Ejemplo de estructura if en Python.',
+                link: 'seleccionP.html'
             },
             {
                 id: 5,
                 language: 'python',
                 structure: 'for',
                 title: 'Python For',
-                image: '/iconos/logo_python_gris.png',
-                text: 'Ejemplo de estructura for en Python.'
+                image: 'logo_python_gris.png',
+                text: 'Ejemplo de estructura for en Python.',
+                link: 'iteracionP.html#for'
             },
             {
                 id: 6,
                 language: 'python',
                 structure: 'while',
                 title: 'Python While',
-                image: '/iconos/logo_python_gris.png',
-                text: 'Ejemplo de estructura while en Python.'
+                image: 'logo_python_gris.png',
+                text: 'Ejemplo de estructura while en Python.',
+                link: 'iteracionP.html#while'
             }
         ];
 
@@ -142,7 +148,7 @@
                         <div class="card-body">
                             <h5 class="card-title">${card.title}</h5>
                             <p class="card-text">${card.text}</p>
-                            <a href="/java_for.html" class="btn btn-gradient">Comenzar</a>
+                            <a href="${card.link}" class="btn btn-gradient">Comenzar</a>
                         </div>
                     </div>
                 `;
