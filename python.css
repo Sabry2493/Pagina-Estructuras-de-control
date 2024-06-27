@@ -128,18 +128,17 @@ body {
     cursor: pointer;
 }
 
+#iteracion,#seleccion{
+    border: solid 3px white;
+}
 #doble,#simple,#multiple {
     margin: 0px 20px;
     padding: 18px;
+    border: solid 3px #ce6f02;
 }
 #contador,#condicion{
     margin: 0px 20px;
-    
-}
-#inicial,#final{
-    margin: 0px 16px;
-    padding: 0px 2px;
-    
+    border: solid 3px #ce6f02;    
 }
 /*ESTILOS DE FOOTER*/
 #pie{
