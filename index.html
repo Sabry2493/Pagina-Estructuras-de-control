@@ -105,44 +105,48 @@
                             <h4 class="mt-1 mb-5 pb-1">Estructuras de control</h4>
                           </div>
           
-                          <form >
+                          <form id="formularioContacto">
                             <p>Contactenos para mas ayuda</p>
           
                             <div data-mdb-input-init class="form-outline mb-4">
-                              <label class="form-label" for="form2Example11">Nombre</label> 
-                              <input type="text" placeholder="su nombre"/>
+                              <label class="form-label" for="nom">Nombre</label> 
+                              <input type="text" id="nom" placeholder="su nombre"/>
                               
                             </div>
           
                             <div data-mdb-input-init class="form-outline mb-4">
-                              <label class="form-label" for="form2Example22">Apellido</label> 
-                              <input type="text" placeholder="su apellido"/>
+                              <label class="form-label" for="ape">Apellido</label> 
+                              <input type="text" id="ape" placeholder="su apellido"/>
             
                             </div>
 
                             <div data-mdb-input-init class="form-outline mb-4">
-                                <label class="form-label" for="form2Example11">Email de contacto</label>
-                                <input type="email" id="form2Example11" class="form-control"
-                                  placeholder="su dirección de correo" />
+                                <label class="form-label" for="email">Email de contacto</label>
+                                <input type="email" id="email" class="form-control" placeholder="su dirección de correo" />
                                 
-                              </div>
-
-                              <div data-mdb-input-init class="form-outline mb-4">
-                                <label class="form-label" for="form2Example22">Comente su interes</label> 
-                                <textarea id="form2Example22" placeholder="Escriba aqui" cols="30" rows="5"></textarea>
+                            </div>
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="tel">Telefono</label> 
+                                <input type="number" id="tel" placeholder="su numero"/>
               
-                              </div>
+                            </div>
+
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="textArea">Comente su interes</label> 
+                                <textarea id="textArea" placeholder="Escriba aqui" cols="30" rows="5"></textarea>
+              
+                            </div>
           
-                            <div class="text-center pt-1 mb-5 pb-1">
-                              <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 btn-login" type="button">Enviar
+                            <div class="text-center pt-1 mb-2 pb-1">
+                              <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 btn-login" type="button" onclick="Valida()">Enviar
     
                               </button>
                               
                             </div>
-    
-                            
           
                           </form>
+                          <div id="Error"></div>
+                          <div id="Confirmacion"></div>
           
                         </div>
                       </div>
